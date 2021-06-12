@@ -1,0 +1,94 @@
+.recall {
+  padding: var(--sectional) 0;
+
+  &__title {
+    text-align: center;
+  }
+  &__swiper-container {
+    padding: 35px 20px;
+  }
+
+  &__swiper-button-prev::after,
+  &__swiper-button-next::after {
+    display: none;
+  }
+
+  &__swiper-button-prev {
+    background-image: url(../img/sprite.svg#arrow-slider-prev);
+  }
+  &__swiper-button-next {
+    background-image: url(../img/sprite.svg#arrow-slider-next);
+  }
+
+  &__swiper-button-prev,
+  &__swiper-button-next {
+    width: 20px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  &__blockquote {
+    margin: 0;
+    padding: 0 45px;
+    &-wrapper {
+      max-width: 415px;
+      border: 1px solid var(--color-espresso);
+      padding: 60px 20px 45px 35px;
+      position: relative;
+      margin-bottom: 35px;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 45px;
+        bottom: -40px;
+        border: 20px solid transparent;
+        border-top: 20px solid var(--color-black);
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        left: 45px;
+        bottom: -80px;
+        border: 20px solid transparent;
+        border-top: 20px solid var(--color-black);
+        border-top: 20px solid white;
+        bottom: -39px;
+      }
+    }
+    &-title {
+      display: block;
+      font: var(--recal-title);
+      margin-bottom: 9px;
+    }
+    &-text {
+      font: var(--recal-text);
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        left: -5px;
+        top: -110px;
+        background-image: url(../img/quotes.svg);
+        width: 85px;
+        height: 50px;
+        background-repeat: no-repeat;
+      }
+    }
+    &-autor-wrapper {
+      display: flex;
+      align-items: center;
+    }
+    &-photo {
+      margin-left: 30px;
+      border-radius: 100%;
+      width: 77px;
+      height: 77px;
+    }
+    &-autor {
+      font: var(--recal-autor-name);
+      margin-left: 5px;
+    }
+  }
+}

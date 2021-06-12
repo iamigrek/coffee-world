@@ -1,0 +1,125 @@
+.footer {
+  padding: 80px 0 0;
+  background-color: var(--color-espresso);
+  position: relative;
+
+  &__top {
+    padding-bottom: 60px;
+  }
+  &__bottom {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-top: 1px solid var(--color-white);
+    &-designer {
+      margin-bottom: 20px;
+    }
+    &-copy {
+      font: var(--btn-muddy);
+      color: var(--color-white);
+    }
+  }
+  &__item {
+    &-title {
+      font: var(--footer-title);
+      color: var(--color-white);
+      text-transform: uppercase;
+      grid-column: 3 span;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.footer-menu {
+  grid-column: 5 span;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+
+  &__item {
+    font: var(--btn-muddy);
+    color: var(--color-white);
+    margin-bottom: 32px;
+    padding-left: 27px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 10px;
+      height: 19px;
+      background-image: url(../img/sprite.svg#menu_arrow);
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      transition: left 0.2s ease-in-out;
+    }
+    &:hover::before {
+      left: 5px;
+    }
+  }
+}
+
+.footer-contacts {
+  grid-column: 4 span;
+  &__item {
+    font: var(--btn-muddy);
+    color: var(--color-white);
+    margin-bottom: 28px;
+    padding-left: 60px;
+    position: relative;
+    &-phone,
+    &-mail {
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0px;
+        top: -6px;
+        height: 31px;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: top 0.2s ease-in-out;
+      }
+      &:hover::before {
+        top: -10px;
+      }
+    }
+
+    &-phone {
+      &::before {
+        width: 31px;
+
+        background-image: url(../img/sprite.svg#footer_tell);
+      }
+    }
+    &-mail {
+      &::before {
+        width: 43px;
+
+        background-image: url(../img/sprite.svg#footer-mail);
+      }
+    }
+  }
+}
+.footer-social {
+  grid-column: 2 span;
+  &__item {
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+    transition: box-shadow 0.2s ease-in-out;
+    &:hover {
+      box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.54);
+    }
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 23px;
+  }
+}

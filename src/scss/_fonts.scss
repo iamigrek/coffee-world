@@ -1,0 +1,12 @@
+// @include font-face("Muller", "../fonts/MullerRegular", 400, normal);
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee&family=Josefin+Sans:wght@300;400;600&family=Radley&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+
+@include font-face("ABeeZee", "../fonts/ABeeZeeRegular", 400, normal);
+
+// @include font-face("Radley", "../fonts/RadleyItalic", 400, italic);
+// @include font-face("Radley", "../fonts/RadleyRegular", 400, normal);
+
+@include font-face("JosefinSans", "../fonts/JosefinSansLight", 300, normal);
+@include font-face("JosefinSans", "../fonts/JosefinSansRegular", 400, normal);
+@include font-face("JosefinSans", "../fonts/JosefinSansSemiBold", 600, normal);

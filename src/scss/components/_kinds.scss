@@ -1,0 +1,65 @@
+.kinds {
+  padding-top: 135px;
+  &__list {
+  }
+  &__item {
+    grid-column: 3 span;
+  }
+  &__link {
+    position: relative;
+    max-width: 200px;
+    font: var(--kinds-name);
+    color: var(--color-white);
+    top: -80px;
+    margin: auto auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 28px 37px;
+    background-color: var(--color-muddy);
+    transition: top 0.2s ease-in-out;
+    &:hover {
+      top: -90px;
+    }
+    &-title {
+      padding-bottom: 7px;
+    }
+    &-italic {
+      padding-top: 2px;
+      display: block;
+      border-top: 1px solid var(--color-espresso);
+      font: var(--kinds-class);
+    }
+  }
+  &__title-wrapper {
+    padding: 110px 50px 30px;
+    text-align: center;
+  }
+  &__title {
+    font: var(--big-title);
+    color: var(--color-black);
+    position: relative;
+    &::before {
+      content: "16";
+      position: absolute;
+      top: -160px;
+      left: -27px;
+      font: var(--count);
+      color: var(--color-alto);
+      z-index: -1;
+    }
+    &-italic {
+      display: block;
+      font: var(--big-title-italic);
+      margin-bottom: 10px;
+    }
+  }
+  &__text {
+    color: var(--color-nobel);
+    margin-bottom: 10px;
+  }
+  &__btn {
+    color: var(--color-black);
+    font: var(--small-title);
+  }
+}

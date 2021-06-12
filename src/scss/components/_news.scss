@@ -1,0 +1,22 @@
+.news {
+  padding: var(--sectional);
+  text-align: center;
+  &__title {
+    margin-bottom: 40px;
+  }
+  &__item {
+    grid-column: 3 span;
+  }
+  &__img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+  &__text {
+    font: var(--recal-text);
+    padding: 8px 18px;
+    border: 1px solid var(--color-espresso);
+    border-top: none;
+  }
+}

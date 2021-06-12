@@ -1,0 +1,129 @@
+.order {
+  background-color: var(--color-mercury);
+  padding: var(--sectional);
+  &__container {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      right: -350px;
+      top: -135px;
+      width: 733px;
+      height: 760px;
+      background-image: url(../img/order-bg.png);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: drop-shadow(5px 10px 50px rgba(0, 0, 0, 0.1));
+    }
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: var(--grid-gap);
+    grid-row-gap: 36px;
+    max-width: 770px;
+    &-prod-item {
+      color: var(--color-boulder);
+    }
+    &-item {
+      padding: 20px 30px !important;
+      option {
+        padding: 20px 30px;
+      }
+    }
+
+    &-textarea {
+      display: block;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 3;
+      resize: none;
+      width: 100%;
+      height: 150px;
+      border: none;
+      padding: 20px 30px;
+      font: var(--order-input);
+    }
+  }
+  &__select {
+    cursor: pointer;
+  }
+}
+
+//=============
+.modal-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  z-index: 100;
+}
+.modals {
+  position: absolute;
+}
+
+.modal {
+  background-color: #fff;
+
+  padding: 30px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: block;
+  &-overlay--visible {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease-in-out;
+  }
+  &-overlay--visible {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease-in-out;
+  }
+  &--visible {
+    display: block;
+  }
+}
+
+.order__modal {
+  &-table {
+    margin-bottom: 20px;
+  }
+  &-row {
+    text-align: center;
+  }
+  &-product {
+    color: var(--color-black);
+  }
+  &-title {
+    padding: 10px 8px;
+    background-color: var(--color-muddy);
+
+    color: var(--color-white);
+  }
+  &-row-input {
+    max-width: 50px;
+    padding: 5px 5px;
+    font: var(--order-unput);
+    text-align: center;
+  }
+  &-buttons {
+    display: flex;
+    justify-content: space-around;
+  }
+}

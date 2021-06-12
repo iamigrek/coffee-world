@@ -1,0 +1,51 @@
+:root {
+  // COLORS
+  --color-white: #fff;
+  --color-black: #000;
+  --color-espresso: #582d19;
+  --color-muddy: #b78a64;
+  --color-alto: #d9d9d9;
+  --color-nobel: #b3b3b3;
+  --color-boulder: #767676;
+  --color-shaft: #323131;
+  --color-paarl: #a0522f;
+  --color-cioccolato: #522a0a;
+  --color-mercury: #e8e8e8;
+  --color-boulder: #767676;
+  --color-social: #404040;
+  --color-transperent: transperent;
+  //RETREATS
+  --grid-gap: 30px;
+  --sectional: 70px;
+
+  //FONTS
+  --font-abeezee: "ABeeZee", Courier, monospace;
+  --font-radley: "Radley", Courier, monospace;
+  --font-josefin: "Josefin Sans", Courier, monospace;
+
+  --def: 400 16px / 17px var(--font-abeezee);
+  --text: 400 16px / 15px var(--font-abeezee);
+  --contact: 400 13px / 12px var(--font-abeezee);
+  --menu: 400 20px / 19px var(--font-abeezee);
+  --btn: 400 35px / 33px var(--font-abeezee);
+  --btn-muddy: 400 23px / 22px var(--font-abeezee);
+  --footer-title: 400 26px / 25px var(--font-abeezee);
+
+  --big-subtitle: 400 40px / 38px var(--font-radley);
+  --big-title: 400 62px / 58px var(--font-radley);
+  --very-big-title: 400 90px / 90px var(--font-radley);
+  --big-title-italic: italic 400 37px / 35px var(--font-radley);
+  --small-title: 400 24px / 23px var(--font-radley);
+  --main-title: 400 36px / 45px var(--font-radley);
+  --autor: 400 18px / 23px var(--font-radley);
+  --kinds-name: 400 16px / 20px var(--font-radley);
+  --kinds-class: italic 400 14px / 18px var(--font-radley);
+
+  --count: 300 270px / 254px var(--font-josefin);
+  --num: 400 130px / 122px var(--font-josefin);
+  --recal-title: 600 18px / 17px var(--font-josefin);
+  --recal-autor-name: 600 24px / 26px var(--font-josefin);
+  --recal-text: 400 16px / 17px var(--font-josefin);
+  --order-unput: 400 14px / 14px var(--font-josefin);
+  --order-input: 400 24px / 23px var(--font-josefin);
+}

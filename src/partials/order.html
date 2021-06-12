@@ -1,0 +1,87 @@
+<section class="order">
+	<div class="order__container container">
+		<h2 class="very-big-title order__title">
+			Order online
+		</h2>
+		<form action="" class="order__form">
+			<input type="text" placeholder="Name" required class="order__form-name input-order">
+
+			<input type="text" placeholder="Phone" required class="order__form-email input-order">
+			<input type="text" placeholder="Email" class="order__form-item order__form-phone input-order">
+			<button type="button" class="order__select select-order" data-path="order-popup">
+				What you want?
+			</button>
+
+			<div class="order__modals modals">
+				<div class="order__modal-overlay modal-overlay">
+					<div class="order__modal modal" data-target="order-popup">
+						<table cellspacing="10" class="order__modal-table">
+							<tr class="order__modal-column order__modal-column-title">
+								<th class="order__modal-row order__modal-title">Name</th>
+								<th class="order__modal-row order__modal-title">Quantity</th>
+								<th class="order__modal-row order__modal-title">Price</th>
+								<th class="order__modal-row order__modal-title">Order</th>
+							</tr>
+
+							<tr class="order__modal-column">
+								<td class="order__modal-row order__modal-product">Coffee</td>
+								<td class="order__modal-row order__modal-product"><input id="order-inp-1" class="order__modal-row-input"
+										placeholder="1" type="text">
+								</td>
+								<td class="order__modal-row order__modal-product">10$</td>
+
+								<td class="order__modal-row order__modal-product">
+									<label class="custom-checkbox">
+										<input id="textInput" type="checkbox" class="custom-checkbox__field">
+										<span class="custom-checkbox__content"></span>
+									</label>
+								</td>
+							</tr>
+
+							<tr class="order__modal-column">
+								<td class="order__modal-row order__modal-product">Coffee</td>
+								<td class="order__modal-row order__modal-product"><input id="order-inp-2" class="order__modal-row-input"
+										placeholder="1" type="text">
+								</td>
+								<td class="order__modal-row order__modal-product">10$</td>
+
+								<td class="order__modal-row order__modal-product">
+									<label class="custom-checkbox">
+										<input type="checkbox" class="custom-checkbox__field">
+										<span class="custom-checkbox__content"></span>
+									</label>
+								</td>
+							</tr>
+
+							<tr class="order__modal-column">
+								<td class="order__modal-row order__modal-product">Coffee</td>
+								<td class="order__modal-row order__modal-product"><input id="order-inp-3" class="order__modal-row-input"
+										placeholder="1" type="text">
+								</td>
+								<td class="order__modal-row order__modal-product">10$</td>
+
+								<td class="order__modal-row order__modal-product">
+									<label class="custom-checkbox">
+										<input id="order-che-2" type="checkbox" class="custom-checkbox__field">
+										<span class="custom-checkbox__content"></span>
+									</label>
+								</td>
+							</tr>
+
+
+						</table>
+
+						<div class="order__modal-buttons">
+							<button type="button" onclick="ClearFields()"
+								class="btn order__modal-btn-clear btn--modal">Cancel</button>
+							<button type="button" onclick="closeModal()" class="btn order__modal-btn btn--modal">Proceed</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<textarea placeholder="Message" class="order__form-textarea"></textarea>
+			<button class="order__form-btn btn btn--modal">Order</button>
+		</form>
+	</div>
+</section>

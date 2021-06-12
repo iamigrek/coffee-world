@@ -1,0 +1,31 @@
+.statistics {
+  position: relative;
+  height: 400px;
+  &__item {
+    grid-column: 4 span;
+    text-align: center;
+    padding: 115px 0 120px;
+    color: var(--color-white);
+  }
+  &__num {
+    font: var(--num);
+    display: block;
+    margin-bottom: 7px;
+  }
+  &__name {
+    font: var(--big-subtitle);
+  }
+  &__img-wrapper {
+    position: absolute;
+    background-image: url(../img/statistics-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    z-index: -1;
+  }
+}
